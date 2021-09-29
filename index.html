@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component Library</title>
+    <title>Nitesh Rai's Component Library</title>
     <!--Page Title : element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)-->
 
     <!-- Updated link below to conect style.css page -->
@@ -28,78 +28,88 @@
     <!-- element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.-->
 
 
-    <h1>Welcome to Nitesh_Rai's Component Library.</h1>
+    <h1>Welcome to <strong>Nitesh_Rai's</strong> Component Library.</h1>
     <!--My First Heading : element defines a large heading.-->
 
 
     <p>I am attending neoG.camp and I want to make a library which would make all my projects look good and consistent.
-    </p>
-    <!--My first paragraph : element defines a paragraph-->
-
+    </p> <!--My first paragraph : element defines a paragraph-->
+    <p>This is a component library created by me to better design each element.</p>
+    <p>After creating this library I'm going to use the components in my <strong>portfolio, blog and all projects</strong> created. This will ensure that all my projects have <strong>consistent themeing and styling</strong></p>
 
     <hr>
 
     <h2>@typography</h2>
 
-    <h1>This is the biggest heading.</h1>
-    <h2>This is the second biggest.</h2>
-    <p>This is the normal text.This is free flowing and will wrap at the end like a paragraph.</p>
+    <h1>The biggest heading h1.</h1>
+    <h2>The second biggest heading h2.</h2>
+    <p>This is normal text. Long running text would look like this on your website. This will auto fold based on the width</p>
     <p>This paragraph will have a <strong>bold</strong> text</p>>
-    <small>This is relatively very smaller text.</small>
+    <!-- <small>This is relatively very smaller text.</small> -->
+    <p class="text-sm">This is relatively smaller text</p>
 
     <hr>
 
     <h2>@container</h2>
 
     <h3>fluid container</h3>
-    <div class="container">This is a fluid container and it will go till the end of the page.</div>
+    <div class="container">
+        This is going to be a fluid container. It will go full width of page. With some margin.
+    </div>
 
-    <h3>center container</h3>
-    <div class="container container-center">This is a centered container and it will go till the specified width.</div>
+    <h3>@center container</h3>
+    <div class="container">
+        This is going to be a center container. It will go till a given width and center content.
+    </div>
 
     <hr>
 
     <h2>@Links</h2>
 
-    <a class="link link-primary" href="/">Primary Link</a>
+    <a  class="primary-link" href="/"> Primary Link</a>
     <!--<a> : anchor tag -->>
-    <a class="link link-secondary" href="/">Secondary Link</a>
+    <a class="secondary-link" href="/"> Secondary Link</a>
 
 
     <hr>
 
     <h2>@lists</h2>
     <h3>unordered list</h3>
-    <p>This list will not have the bullets.</p>>
+    <p> We don't want to show bullets in the unordered list. We'll remove that with CSS. </p>
 
-    <ul class="list-non-bullet">
+    <ul class="unordered">
         <li>Item One</li>
         <li>Item Two</li>
         <li>Item Three</li>
 
     </ul>
 
-    <h3>unordered inline list</h3>
+    <h3> inline list</h3>
 
-    <ul class="list-non-bullet">
-        <li class="list-item-inline">Inline Item One</li>
-        <li class="list-item-inline">Inline Item Two</li>
-        <li class="list-item-inline">Inline Item Three</li>
+    <p>Instead of going in a new row, we will create a list which will take columns.</p>
+
+    <ul class="unordered list-inline">
+        <li> Item One</li>
+        <li> Item Two</li>
+        <li> Item Three</li>
     </ul>
 
-    <h3> reverse ordered list</h3>
+    <h3> reverse ordered lists</h3>
+    <p>Counting of will go reverse for this list </p>
 
     <ol reversed>
-        <li>milk</li>
-        <li>eggs</li>
-        <li>break</li>
+        <li>something</li>
+        <li>something else</li>
+        <li>something elser</li>
     </ol>
+
 
 
     <hr>
 
-    <h2>@nav</h2>
 
+    <h2>@nav</h2>
+    <p>Navigation is used on the top of the page and used to get to different pages</p>
     <nav class="navigation container">
         <div class="nav-brand">I_Am_A_Brand</div>
         <ul class="list-non-bullet nav-pills">
@@ -118,10 +128,11 @@
 
     <hr>
 
-    <h2>header</h2>
+    <h2>@header</h2>
 
-    <header class="hero">
+    <header class=" container hero">
         <img class="hero-img" src="images/hero.svg">
+        <h1> this is heading h1 inside header</h1>
         <h1 class="hero-heading">Nitesh Rai <span class="heading-inverted">The Full Stack Web Developer</span></h1>
 
     </header>
@@ -167,6 +178,7 @@
     <hr> <!-- <hr> : The Thematic Break (Horizontal Rule) element -->
     <h2>@footer</h2>
     <footer class="footer">
+        <div class="container">
         <div class="social-links list-non-bullet"> Some small heading inside footer</div>
         <ul>
             <li class="list-item-inline">
@@ -188,20 +200,8 @@
                 </a>
             </li>
         </ul>
+        </div>
     </footer>
-
-
-
-
-
-
-
-    <!-- <div style="height: 30vh;"> -->
-    </div>
-
-
-
-
 </body>
 
 </html>
